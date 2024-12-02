@@ -1,0 +1,15 @@
+@tailwind base;
+/* Подключение базовых стилей Tailwind */
+@tailwind components;
+/* Подключение компонентов Tailwind */
+@tailwind utilities;
+/* Подключение утилитарных классов Tailwind */
+
+@layer base {
+
+  /* Базовые стили для HTML-элементов */
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
+    /* Шрифт по умолчанию, фон, цвет текста и межстрочный интервал */
+  }
+}

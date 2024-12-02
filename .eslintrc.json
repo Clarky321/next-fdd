@@ -1,0 +1,37 @@
+/*
+Этот файл настраивает линтер ESLint для поддержания качества кода.
+*/
+
+{
+  "extends": [
+    "next/core-web-vitals", // Базовые правила для Next.js
+    "eslint:recommended", // Рекомендуемые правила для JavaScript
+    "plugin:react/recommended", // Рекомендации для React
+    "prettier" // Интеграция с Prettier
+  ],
+  "plugins": ["react", "tailwindcss"], // Подключение плагинов для React и TailwindCSS
+  "rules": {
+    "react/react-in-jsx-scope": "off", // React автоматически импортируется в Next.js
+    "react/prop-types": "off", // Отключение проверки PropTypes
+    "tailwindcss/classnames-order": "warn", // Предупреждение для порядка классов Tailwind
+    "tailwindcss/no-custom-classname": "off", // Разрешаем пользовательские классы
+    "no-console": "warn", // Предупреждение при использовании console.log
+    "no-unused-vars": "warn", // Предупреждение о неиспользуемых переменных
+    "react/jsx-uses-react": "off", // Устаревшее правило, больше не нужно
+    "react/jsx-uses-vars": "warn" // Убедиться, что переменные JSX используются
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Автоматическое определение версии React
+    },
+    "tailwindcss": {
+      "callees": ["clsx", "classnames"], // Анализ классов в этих функциях
+      "prependCustom": true // Обработка пользовательских классов после Tailwind
+    }
+  },
+  "env": {
+    "browser": true, // Код выполняется в браузере
+    "node": true, // Поддержка Node.js
+    "es2021": true // Возможности ES2021
+  }
+}
