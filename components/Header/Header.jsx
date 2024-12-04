@@ -6,7 +6,7 @@ import NavMobile from "./NavMobile";
 
 export default function Header() {
     return (
-        <header className="py-8 xl:py-6 text-white bg-black border-b">
+        <header className="py-8 xl:py-6 text-white bg-primary">
             <div className="flex justify-center items-center">
                 {/* logo */}
 
