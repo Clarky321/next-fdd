@@ -12,8 +12,4 @@
     @apply font-primary bg-primary text-white leading-loose;
     /* Шрифт по умолчанию, фон, цвет текста и межстрочный интервал */
   }
-  :root {
-
-    --radius: 0.5rem
-  }
 }

@@ -1,5 +1,12 @@
+//components
+import Hero from "@/components/Homepage/Hero";
+import OurServices from "@/components/Homepage/ourservices";
+
 export default function Home() {
   return (
-    <div>Главная страница</div>
+    <div>
+      <Hero />
+      <OurServices />
+    </div>
   );
 }
